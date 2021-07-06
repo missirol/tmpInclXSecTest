@@ -1,0 +1,11 @@
+--- loop_sm_MSbar_yb_yc/CT_parameters.py	2019-01-23 18:12:52.000000000 +0100
++++ loop_sm_MSbar_yb_yc/CT_parameters.py	2021-01-01 00:00:00.000000000 +0200
+@@ -134,7 +134,7 @@
+ UV_yuk_c = CTParameter(name = 'UV_yuk_c',
+                        type = 'real',
+                        value = {-1:'-(1.0/2.0)*((G**2)/(16.0*cmath.pi**2))*3.0*CF*2.0',
+-                                 0:'cond(MC,0.0,-(1.0/2.0)*((G**2)/(16.0*cmath.pi**2))*CF*(-3.0*reglog(MC**2/MU_R**2)+4.0)*2.0)'
++                                 0:'cond(MC,0.0,0)'
+                                },
+                        texname = '\delta y_c')
+ 

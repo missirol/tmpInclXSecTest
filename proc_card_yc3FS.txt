@@ -1,0 +1,21 @@
+import model loop_sm_MSbar_yb_yc-yc3FS
+define p = g u d s u~ d~ s~
+define j = g u d s u~ d~ s~
+
+generate p p > h c c~ [QCD]
+
+output output_muRF___MURF_SCALE__ -nojpeg
+launch
+
+fixed_order=ON
+done
+
+set pdlabel lhapdf
+set lhaid 321300
+set ptj 0
+set fixed_ren_scale True
+set fixed_fac_scale True
+set muR_ref_fixed __MURF_SCALE__
+set muF_ref_fixed __MURF_SCALE__
+set nevents 100
+done
